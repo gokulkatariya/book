@@ -12,7 +12,7 @@ function Example() {
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
+        login
       </Button>
 
       <Modal show={show} onHide={handleClose}>
