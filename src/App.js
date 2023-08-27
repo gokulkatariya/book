@@ -16,7 +16,7 @@ function App() {
     <>
     <Example/>
       <Navbar />
-      <Homepage />
+      {/* <Homepage /> */}
       <div className="container my-5">
         <h2>Featured Book -</h2>
         <div className="row">
@@ -53,7 +53,7 @@ function App() {
         <h2>Reviaw -</h2>
         <div className="row">
           <div className="col-md-3">
-            <About image={Image1} name={'Lalchand'} text={'Ceo'} />
+            <About image={Image1} name={'Lalchand'} text={'CEO'} />
           </div>
           <div className="col-md-3">
             <About image={Image2} name={'Gokul Kumar'}  text={'Manager'} />
