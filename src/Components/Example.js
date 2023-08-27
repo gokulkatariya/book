@@ -22,7 +22,7 @@ function Example() {
         <Modal.Body>
           <Form>
             
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Group className="mb-3" controlId="inputemail">
               <Form.Label>Email address</Form.Label>
               <Form.Control
                 type="email"
@@ -30,7 +30,7 @@ function Example() {
                 autoFocus
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Group className="mb-3" controlId="inputpassword">
               <Form.Label>PASSWORD</Form.Label>
               <Form.Control
                 type="password"

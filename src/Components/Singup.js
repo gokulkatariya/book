@@ -21,7 +21,7 @@ function Signup () {
         </Modal.Header>
         <Modal.Body>
           <Form>
-          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Group className="mb-3" controlId="username">
               <Form.Label>USER NAME</Form.Label>
               <Form.Control
                 type="user name"
@@ -29,7 +29,7 @@ function Signup () {
                 autoFocus
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Group className="mb-3" controlId="email">
               <Form.Label>Email address</Form.Label>
               <Form.Control
                 type="email"
@@ -37,7 +37,7 @@ function Signup () {
                 autoFocus
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Group className="mb-3" controlId="password">
               <Form.Label>PASSWORD</Form.Label>
               <Form.Control
                 type="password"
@@ -45,7 +45,7 @@ function Signup () {
                 autoFocus
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Group className="mb-3" controlId="contact">
               <Form.Label>CONTACT</Form.Label>
               <Form.Control
                 type="mobile number"
@@ -53,7 +53,7 @@ function Signup () {
                 autoFocus
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Group className="mb-3" controlId="address">
               <Form.Label>ADDERESS</Form.Label>
               <Form.Control
                 type="address"
