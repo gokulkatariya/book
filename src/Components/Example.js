@@ -6,13 +6,10 @@ import Modal from 'react-bootstrap/Modal';
 function Example() {
     function handlelogin() {
         alert("success");
-        var username = document.getElementById('name').value;
-        var email = document.getElementById('email').value;
         var password = document.getElementById('password').value;
-        var contact = document.getElementById('contact').value;
-        // var conformpassword = document.getElementById('conformpasswordInput').value;
-        if (username != '' && email != ''&& password != '' && contact != '')
-        console.log(username,email,password,contact)
+        var email = document.getElementById('email').value;
+        if ( email != ''&& password != '' )
+        console.log(email,password)
          {
           fetch('http://13.48.194.120:8000//registre/', {
             method: 'POST',
@@ -20,10 +17,9 @@ function Example() {
               "content-type": "application/json",
             },
             body: JSON.stringify({
-              username: username,
               email: email,
               password: password,
-              contact: contact,
+              
   
             })
           }).then(res => res.json())
@@ -42,7 +38,7 @@ function Example() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="primary mx-3" onClick={handleShow}>
         LOGIN
       </Button>
 
@@ -61,7 +57,7 @@ function Example() {
                 autoFocus
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="inputpassword">
+            //<Form.Group className="mb-3" controlId="inputpassword">
               <Form.Label>PASSWORD</Form.Label>
               <Form.Control
                 type="password"
