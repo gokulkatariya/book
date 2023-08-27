@@ -4,6 +4,37 @@ import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 
 function Example() {
+    function handlelogin() {
+        alert("success");
+        var username = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        var contact = document.getElementById('contact').value;
+        // var conformpassword = document.getElementById('conformpasswordInput').value;
+        if (username != '' && email != ''&& password != '' && contact != '')
+        console.log(username,email,password,contact)
+         {
+          fetch('http://13.48.194.120:8000//registre/', {
+            method: 'POST',
+            headers: {
+              "content-type": "application/json",
+            },
+            body: JSON.stringify({
+              username: username,
+              email: email,
+              password: password,
+              contact: contact,
+  
+            })
+          }).then(res => res.json())
+            .then(data => {
+              if (data.error) {
+              }
+              else {
+              }
+            })
+        }
+      }
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -51,7 +82,7 @@ function Example() {
           {/* <Button variant="secondary" onClick={handleClose}>
             Close
           </Button> */}
-          <Button variant="primary" onClick={handleClose}>
+          <Button variant="primary" onClick={handlelogin}>
             SUBMIT
           </Button>
         </Modal.Footer>
