@@ -10,11 +10,14 @@ import Image1 from './Components/Images/lalchand.jpeg';
 import Image2 from './Components/Images/gokul.jpeg';
 import Image3 from './Components/Images/laxman.jpeg';
 import Image4 from './Components/Images/jhabar.jpeg';
-import Example from './Components/Example';
+// import Signup from './Components/Singup';
+// import Example from './Components/Example';
 function App() {
   return (
     <>
-    <Example/>
+    {/* <Signup/> */}
+  
+    {/* <Example/> */}
       <Navbar />
       {/* <Homepage /> */}
       <div className="container my-5">

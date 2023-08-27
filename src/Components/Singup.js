@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 
-function Example() {
+function Signup () {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -12,17 +12,24 @@ function Example() {
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
-        LOGIN
+      REGISTRATION
       </Button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Login Here</Modal.Title>
+          <Modal.Title>REGISTRATION HERE</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form>
-            
-            <Form.Group className="mb-3" controlId="inputemail">
+          <Form.Group className="mb-3" controlId="username">
+              <Form.Label>USER NAME</Form.Label>
+              <Form.Control
+                type="user name"
+                placeholder=" enter username"
+                autoFocus
+              />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="email">
               <Form.Label>Email address</Form.Label>
               <Form.Control
                 type="email"
@@ -30,11 +37,27 @@ function Example() {
                 autoFocus
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="inputpassword">
+            <Form.Group className="mb-3" controlId="password">
               <Form.Label>PASSWORD</Form.Label>
               <Form.Control
                 type="password"
                 placeholder="enter password"
+                autoFocus
+              />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="contact">
+              <Form.Label>CONTACT</Form.Label>
+              <Form.Control
+                type="mobile number"
+                placeholder="enter contact number"
+                autoFocus
+              />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="address">
+              <Form.Label>ADDERESS</Form.Label>
+              <Form.Control
+                type="address"
+                placeholder="enter address"
                 autoFocus
               />
             </Form.Group>
@@ -52,7 +75,7 @@ function Example() {
             Close
           </Button> */}
           <Button variant="primary" onClick={handleClose}>
-            SUBMIT
+            submit
           </Button>
         </Modal.Footer>
       </Modal>
@@ -60,4 +83,4 @@ function Example() {
   );
 }
 
-export default Example;
+export default Signup;
