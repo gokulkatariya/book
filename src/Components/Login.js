@@ -31,7 +31,7 @@ function Example() {
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="inputpassword">
-              <Form.Label>PASSWORD</Form.Label>
+              <Form.Label>Password</Form.Label>
               <Form.Control
                 type="password"
                 placeholder="enter password"

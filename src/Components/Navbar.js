@@ -1,5 +1,5 @@
 import React from 'react'
-import Example from './Example'
+import Login from './Login'
 
 export default function Navbar() {
   return (
@@ -25,10 +25,7 @@ export default function Navbar() {
           <a  className="nav-link" href="/">ContactUs</a>
         </li>
       </ul>
-      <Example/>
-      <form className="d-flex">
-        <button className="btn btn-primary" type="submit">Login</button>
-      </form>
+      <Login/>
     </div>
   </div>
 </nav>
