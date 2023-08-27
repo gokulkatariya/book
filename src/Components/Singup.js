@@ -5,7 +5,7 @@ import Modal from "react-bootstrap/Modal";
 
 function Signup() {
   function handleregister() {
-    alert("success");
+    // alert("success");
     var User_Name = document.getElementById("username").value;
     var Email = document.getElementById("email").value;
     // var password = document.getElementById('password').value;
