@@ -8,7 +8,7 @@ export default function About(props) {
           <img src={props.image} className="card-img-top" style={{borderRadius:"80rem",width:"13rem"}} alt="..." height="200"/>
           <div className="card-body mx-4 my-2">
             <h5 className="card-title">{props.name} Saini</h5>
-            <p className="card-text">{props.text}, Bookstore </p>
+            <p className="card-text">{props.text}, Bookstore jhabar </p>
           </div>
         </div>
       </div>
