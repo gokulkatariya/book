@@ -1,8 +1,10 @@
 import React from 'react'
+import Example from './Example'
 
 export default function Navbar() {
   return (
     <div>
+      
        <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
   <div  className="container-fluid">
     <a  className="navbar-brand" href="/">BOOK STORE</a>
@@ -24,8 +26,9 @@ export default function Navbar() {
           <a  className="nav-link" href="/">ContactUs</a>
         </li>
       </ul>
+      <Example/>
       <form className="d-flex">
-        <button className="btn btn-primary" type="submit">Login</button>
+        {/* <button className="btn btn-primary" type="submit">Login</button> */}
       </form>
     </div>
   </div>
