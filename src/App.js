@@ -19,7 +19,7 @@ function App() {
   
     {/* <Example/> */}
       <Navbar />
-      {/* <Homepage /> */}
+      <Homepage />
       <div className="container my-5">
         <h2>Featured Book -</h2>
         <div className="row">
