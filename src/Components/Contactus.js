@@ -1,5 +1,5 @@
 import React from 'react'
-
+import FollowUs from './FollowUs';
 export default function Contactus() {
   return (
     <div className="row">
@@ -20,8 +20,7 @@ export default function Contactus() {
       </div>
       <div className="col-md-6" style={{ marginTop: "24px", textAlign: "right" }}>
         <div className="support">
-          <h3>Follow Us</h3>
-  
+          <FollowUs />
         </div>
       </div>
     </div>

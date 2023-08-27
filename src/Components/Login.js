@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 
-function Example() {
+function Login() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -11,7 +11,7 @@ function Example() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="primary mx-3" onClick={handleShow}>
         LOGIN
       </Button>
 
@@ -60,4 +60,4 @@ function Example() {
   );
 }
 
-export default Example;
+export default Login;

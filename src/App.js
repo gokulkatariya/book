@@ -10,44 +10,47 @@ import Image1 from './Components/Images/lalchand.jpeg';
 import Image2 from './Components/Images/gokul.jpeg';
 import Image3 from './Components/Images/laxman.jpeg';
 import Image4 from './Components/Images/jhabar.jpeg';
-// import Signup from './Components/Singup';
-// import Example from './Components/Example';
+import gita1 from './Components/Images/gita.jpg';
+import ramayan1 from './Components/Images/Ramayan.jpg';
+import mahabharat1 from './Components/Images/mahabharat.jpg';
+import hanuman1 from './Components/Images/hanuman.jpg';
+import kabirdas1 from './Components/Images/kabirdas.jpg';
+import tulsidas1 from './Components/Images/Tulsidas.jpg';
+import shyambaba1 from './Components/Images/shyambaba.jpg';
+import shiv1 from './Components/Images/shiv.jpg';
 function App() {
   return (
     <>
-    {/* <Signup/> */}
-  
-    {/* <Example/> */}
       <Navbar />
       <Homepage />
       <div className="container my-5">
         <h2>Featured Book -</h2>
         <div className="row">
           <div className="col-md-3">
-            <Category />
+            <Category image={gita1}  name={'Bhagvat Gita'}/>
           </div>
           <div className="col-md-3">
-            <Category />
+            <Category image={ramayan1} name={'Ramayan'}/>
           </div>
           <div className="col-md-3">
-            <Category />
+            <Category image={mahabharat1} name={'Mahabharat'}/>
           </div>
           <div className="col-md-3">
-            <Category />
+            <Category image={hanuman1} name={'Hanuma Chalisa'}/>
           </div>
         </div>
         <div className="row">
           <div className="col-md-3">
-            <Category />
+            <Category image={kabirdas1} name={'Sant Kabir Das'}/>
           </div>
           <div className="col-md-3">
-            <Category />
+            <Category image={tulsidas1} name={'Sant Tulsi Das'}/>
           </div>
           <div className="col-md-3">
-            <Category />
+            <Category image={shyambaba1} name={'Shyam Baba'} />
           </div>
           <div className="col-md-3">
-            <Category />
+            <Category image={shiv1} name={'Shiv'}/>
           </div>
         </div>
       </div>
