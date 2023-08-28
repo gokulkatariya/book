@@ -100,9 +100,6 @@ function Signup() {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          {/* <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button> */}
           <Button variant="primary" onClick={handleregister}>
             submit
           </Button>
