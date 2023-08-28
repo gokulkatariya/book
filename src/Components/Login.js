@@ -68,7 +68,7 @@ function Login() {
         </Modal.Body>
         <Modal.Footer>
           <Button variant="primary" onClick={handlelogin}>
-            SUBMIT
+            
           </Button>
         </Modal.Footer>
       </Modal>
