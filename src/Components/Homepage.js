@@ -13,7 +13,7 @@ export default function Homepage() {
                 <div className="carousel-item active">
                 <div className="carousel-caption d-none d-md-block my-5">
                     <h1 style={{fontSize:"3.5rem"}}>WELLCOME TO BOOK STORE</h1>
-                    <p>“A BOOKSTORE IS ONE OF THE FEW PLACES WHERE ALL THE CANTANKEROUS, CONFLICTING, ALLURING VOICES OF THE WORLD CO-EXIST IN PEACE AND ORDER AND THE AVID READER IS AS FREE AS A PERSON CAN POSSIBLY BE, BECAUSE SHE IS FREE TO CHOOSE AMONG THEM.”</p>
+                    <p style={{marginBottom:'5rem'}}>“A BOOKSTORE IS ONE OF THE FEW PLACES WHERE ALL THE CANTANKEROUS, CONFLICTING, ALLURING VOICES OF THE WORLD CO-EXIST IN PEACE AND ORDER AND THE AVID READER IS AS FREE AS A PERSON CAN POSSIBLY BE, BECAUSE SHE IS FREE TO CHOOSE AMONG THEM.”</p>
                     <Signup/>
                 </div>
                     <img src={img2} className="d-block w-100" alt="..." height="600" />
