@@ -17,7 +17,7 @@ function Example() {
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Login Here</Modal.Title>
+          <Modal.Title>Login </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form>
@@ -31,7 +31,11 @@ function Example() {
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="inputpassword">
+<<<<<<< HEAD
               <Form.Label>Password</Form.Label>
+=======
+              <Form.Label>PASSWORD</Form.Label>
+>>>>>>> 6c6b0c3ffbc7b8c76ebc6eb4360bd09489d37ef4
               <Form.Control
                 type="password"
                 placeholder="enter password"
