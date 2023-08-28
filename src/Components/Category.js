@@ -3,7 +3,7 @@ import React  from 'react'
 export default function Category(props) {
   return (
     <div className="my-5">
-      <div className="card" style={{width: '25rem'}}>
+      <div className="card" style={{width: '18rem'}}>
   <img src={props.image} className="card-img-top" alt="..." height="250"/>
   <div className="card-body">
     <h5 className="card-title">{props.name} Book</h5>
