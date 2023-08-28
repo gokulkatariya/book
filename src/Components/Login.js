@@ -44,7 +44,7 @@ function Login() {
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Login Here</Modal.Title>
+          <Modal.Title>Login </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form>
@@ -57,7 +57,7 @@ function Login() {
                 autoFocus
               />
             </Form.Group>
-            //<Form.Group className="mb-3" controlId="inputpassword">
+            <Form.Group className="mb-3" controlId="inputpassword">
               <Form.Label>PASSWORD</Form.Label>
               <Form.Control
                 type="password"
