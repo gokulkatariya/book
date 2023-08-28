@@ -5,11 +5,18 @@ import Modal from "react-bootstrap/Modal";
 
 function Signup() {
   function handleregister() {
+<<<<<<< HEAD
     var User_Name = document.getElementById("username").value;
     var Email = document.getElementById("email").value;
     var Contect_No = document.getElementById("contact").value;
     var address = document.getElementById("address").value;
     // var conformpassword = document.getElementById('conformpasswordInput').value;
+=======
+    let User_Name = document.getElementById("username").value;
+    let Email = document.getElementById("email").value;
+    let Contect_No = document.getElementById("contact").value;
+    let address = document.getElementById("address").value;
+>>>>>>> b87b4bd588cc9b4a0fd43ebf0a17c6f948ddd368
     if (User_Name !== "" && Email !== "" && Contect_No !== "" && address !== ""){
       console.log(User_Name, Email, Contect_No);
      
@@ -41,48 +48,42 @@ function Signup() {
 
   return (
     <>
-      <Button variant="primary my-5" onClick={handleShow}>
+      <Button letiant="primary" onClick={handleShow}>
         REGISTRATION
       </Button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>REGISTRATION HERE</Modal.Title>
+          <Modal.Title>REGISTRATION </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form>
             <Form.Group className="mb-3" controlId="username">
-              <Form.Label>USER NAME</Form.Label>
+              <Form.Label>User Name</Form.Label>
               <Form.Control
                 type="user name"
-                placeholder=" enter username"
-                autoFocus
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="email">
               <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="enter email" autoFocus />
+              <Form.Control type="email" />
             </Form.Group>
             <Form.Group className="mb-3" controlId="contact">
-              <Form.Label>CONTACT</Form.Label>
+              <Form.Label>Contact</Form.Label>
               <Form.Control
                 type="mobile number"
-                placeholder="enter contact number"
-                autoFocus
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="address">
-              <Form.Label>ADDERESS</Form.Label>
+              <Form.Label>Address</Form.Label>
               <Form.Control
                 type="address"
-                placeholder="enter address"
-                autoFocus
               />
             </Form.Group>
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" onClick={handleregister}>
+          <Button letiant="primary" onClick={handleregister}>
             submit
           </Button>
         </Modal.Footer>

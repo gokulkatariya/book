@@ -5,9 +5,8 @@ import Modal from 'react-bootstrap/Modal';
 
 function Login() {
     function handlelogin() {
-        alert("success");
-        var password = document.getElementById('password').value;
-        var email = document.getElementById('email').value;
+        let password = document.getElementById('password').value;
+        let email = document.getElementById('email').value;
         if ( email !== ''&& password !== '' ){
         console.log(email,password)
          
@@ -37,7 +36,7 @@ function Login() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="primary mx-3" onClick={handleShow}>
         LOGIN
       </Button>
 
@@ -52,23 +51,23 @@ function Login() {
               <Form.Label>Email address</Form.Label>
               <Form.Control
                 type="email"
-                placeholder="enter email"
-                autoFocus
               />
               </Form.Group>
             <Form.Group className="mb-3" controlId="inputpassword">
               <Form.Label>Password</Form.Label>
               <Form.Control
                 type="password"
-                placeholder="enter password"
-                autoFocus
               />
             </Form.Group>
           </Form>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="primary" onClick={handlelogin}>
+<<<<<<< HEAD
             
+=======
+            Submit
+>>>>>>> b87b4bd588cc9b4a0fd43ebf0a17c6f948ddd368
           </Button>
         </Modal.Footer>
       </Modal>
