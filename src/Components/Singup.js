@@ -12,9 +12,9 @@ function Signup() {
     var Contect_No = document.getElementById("contact").value;
     var address = document.getElementById("address").value;
     // var conformpassword = document.getElementById('conformpasswordInput').value;
-    if (User_Name !== "" && Email !== "" && Contect_No !== "" && address !== "")
+    if (User_Name !== "" && Email !== "" && Contect_No !== "" && address !== ""){
       console.log(User_Name, Email, Contect_No);
-     {
+     
       fetch("http://13.127.50.136:8002/sign_up/", {
         method: "POST",
         headers: {

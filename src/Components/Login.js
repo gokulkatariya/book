@@ -8,9 +8,9 @@ function Login() {
         alert("success");
         var password = document.getElementById('password').value;
         var email = document.getElementById('email').value;
-        if ( email != ''&& password != '' )
+        if ( email !== ''&& password !== '' ){
         console.log(email,password)
-         {
+         
           fetch('http://13.48.194.120:8000//registre/', {
             method: 'POST',
             headers: {
