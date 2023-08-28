@@ -9,10 +9,10 @@ function Signup() {
     var Email = document.getElementById("email").value;
     var Contect_No = document.getElementById("contact").value;
     var address = document.getElementById("address").value;
-    if (User_Name !== "" && Email !== "" && Contect_No !== "" && address !== "")
+    // var conformpassword = document.getElementById('conformpasswordInput').value;
+    if (User_Name !== "" && Email !== "" && Contect_No !== "" && address !== ""){
       console.log(User_Name, Email, Contect_No);
-    // eslint-disable-next-line no-lone-blocks
-    {
+     
       fetch("http://13.127.50.136:8002/sign_up/", {
         method: "POST",
         headers: {
