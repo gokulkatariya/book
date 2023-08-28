@@ -31,7 +31,7 @@ function Signup() {
         .then((res) => res.json())
         .then((data) => {
           if (data.error) {
-          } 
+          }
           else {
           }
         })
@@ -110,6 +110,6 @@ function Signup() {
       </Modal>
     </>
   );
-        }
+}
 
 export default Signup;

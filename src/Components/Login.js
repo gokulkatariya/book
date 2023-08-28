@@ -38,7 +38,7 @@ function Login() {
 
   return (
     <>
-      <Button variant="primary mx-3" onClick={handleShow}>
+      <Button variant="primary" onClick={handleShow}>
         LOGIN
       </Button>
 
@@ -58,7 +58,7 @@ function Login() {
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="inputpassword">
-              <Form.Label>PASSWORD</Form.Label>
+              <Form.Label>Password</Form.Label>
               <Form.Control
                 type="password"
                 placeholder="enter password"
@@ -78,7 +78,7 @@ function Login() {
           {/* <Button variant="secondary" onClick={handleClose}>
             Close
           </Button> */}
-          <Button variant="primary" onClick={handlelogin}>
+          <Button variant="primary" onClick={handleClose}>
             SUBMIT
           </Button>
         </Modal.Footer>
