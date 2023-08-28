@@ -5,13 +5,10 @@ import Modal from "react-bootstrap/Modal";
 
 function Signup() {
   function handleregister() {
-    // alert("success");
     var User_Name = document.getElementById("username").value;
     var Email = document.getElementById("email").value;
-    // var password = document.getElementById('password').value;
     var Contect_No = document.getElementById("contact").value;
     var address = document.getElementById("address").value;
-    // var conformpassword = document.getElementById('conformpasswordInput').value;
     if (User_Name !== "" && Email !== "" && Contect_No !== "" && address !== "")
       console.log(User_Name, Email, Contect_No);
     // eslint-disable-next-line no-lone-blocks
@@ -24,7 +21,6 @@ function Signup() {
         body: JSON.stringify({
           User_Name: User_Name,
           Email: Email,
-          // password: password,
           Contect_No: Contect_No,
           address: address,
         }),
@@ -67,14 +63,6 @@ function Signup() {
               <Form.Label>Email address</Form.Label>
               <Form.Control type="email" placeholder="enter email" autoFocus />
             </Form.Group>
-            {/* <Form.Group className="mb-3" controlId="password">
-              <Form.Label>PASSWORD</Form.Label>
-              <Form.Control
-                type="password"
-                placeholder="enter password"
-                autoFocus
-              />
-            </Form.Group> */}
             <Form.Group className="mb-3" controlId="contact">
               <Form.Label>CONTACT</Form.Label>
               <Form.Control
@@ -91,19 +79,9 @@ function Signup() {
                 autoFocus
               />
             </Form.Group>
-            {/* <Form.Group
-              className="mb-3"
-              controlId="exampleForm.ControlTextarea1"
-            >
-              <Form.Label>Example textarea</Form.Label>
-              <Form.Control as="textarea" rows={3} />
-            </Form.Group> */}
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          {/* <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button> */}
           <Button variant="primary" onClick={handleregister}>
             submit
           </Button>
