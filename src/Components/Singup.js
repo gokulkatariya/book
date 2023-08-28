@@ -5,18 +5,10 @@ import Modal from "react-bootstrap/Modal";
 
 function Signup() {
   function handleregister() {
-<<<<<<< HEAD
-    var User_Name = document.getElementById("username").value;
-    var Email = document.getElementById("email").value;
-    var Contect_No = document.getElementById("contact").value;
-    var address = document.getElementById("address").value;
-    // var conformpassword = document.getElementById('conformpasswordInput').value;
-=======
     let User_Name = document.getElementById("username").value;
     let Email = document.getElementById("email").value;
     let Contect_No = document.getElementById("contact").value;
     let address = document.getElementById("address").value;
->>>>>>> b87b4bd588cc9b4a0fd43ebf0a17c6f948ddd368
     if (User_Name !== "" && Email !== "" && Contect_No !== "" && address !== ""){
       console.log(User_Name, Email, Contect_No);
      

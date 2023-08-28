@@ -63,11 +63,7 @@ function Login() {
         </Modal.Body>
         <Modal.Footer>
           <Button variant="primary" onClick={handlelogin}>
-<<<<<<< HEAD
-            
-=======
             Submit
->>>>>>> b87b4bd588cc9b4a0fd43ebf0a17c6f948ddd368
           </Button>
         </Modal.Footer>
       </Modal>
