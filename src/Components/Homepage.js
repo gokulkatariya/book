@@ -11,7 +11,7 @@ export default function Homepage() {
             <div className="carousel-inner">
            
                 <div className="carousel-item active">
-                <div class="carousel-caption d-none d-md-block my-5">
+                <div className="carousel-caption d-none d-md-block my-5">
                     <h1 style={{fontSize:"3.5rem"}}>WELLCOME TO BOOK STORE</h1>
                     <p style={{marginBottom:'5rem'}}>“A BOOKSTORE IS ONE OF THE FEW PLACES WHERE ALL THE CANTANKEROUS, CONFLICTING, ALLURING VOICES OF THE WORLD CO-EXIST IN PEACE AND ORDER AND THE AVID READER IS AS FREE AS A PERSON CAN POSSIBLY BE, BECAUSE SHE IS FREE TO CHOOSE AMONG THEM.”</p>
                     <Signup/>
