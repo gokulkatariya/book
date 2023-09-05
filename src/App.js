@@ -27,30 +27,30 @@ function App() {
         <h2>Featured Book -</h2>
         <div className="row">
           <div className="col-md-3">
-            <Category image={gita1}  name={'Bhagvat Gita'}/>
+            <Category image={gita1}  name={'Bhagvat Gita'} link={'https://vedpuran.files.wordpress.com/2012/03/unencrypted-geeta.pdf'}/>
           </div>
           <div className="col-md-3">
-            <Category image={ramayan1} name={'Ramayan'}/>
+            <Category image={ramayan1} name={'Ramayan'} link={'https://bestmotivationalstoryhindi.files.wordpress.com/2023/07/valmiki-ramayana-only-hindi.pdf'}/>
           </div>
           <div className="col-md-3">
-            <Category image={mahabharat1} name={'Mahabharat'}/>
+            <Category image={mahabharat1} name={'Mahabharat'} link={'https://vedpuran.files.wordpress.com/2021/03/mahabhart-gorkhpur.pdf'}/>
           </div>
           <div className="col-md-3">
-            <Category image={hanuman1} name={'Hanuma Chalisa'}/>
+            <Category image={hanuman1} name={'Hanuma Chalisa'} link={'https://www.hindutemplealbany.org/wp-content/uploads/2016/08/Sri_Hanuman_Chalisa_Hindi.pdf'}/>
           </div>
         </div>
         <div className="row">
           <div className="col-md-3">
-            <Category image={kabirdas1} name={'Sant Kabir Das'}/>
+            <Category image={kabirdas1} name={'Sant Kabir Das'} link={'https://upload.wikimedia.org/wikipedia/commons/9/99/903_Verses_of_Kabir_in_Hindi_Kabir_ke_dohe.pdf'}/>
           </div>
           <div className="col-md-3">
-            <Category image={tulsidas1} name={'Sant Tulsi Das'}/>
+            <Category image={tulsidas1} name={'Sant Tulsi Das'} link={'https://ia803109.us.archive.org/26/items/tulsidaskedoheinhindi/%E0%A4%97%E0%A5%8B%E0%A4%B8%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%AE%E0%A5%80%20%E0%A4%A4%E0%A5%81%E0%A4%B2%E0%A4%B8%E0%A5%80%E0%A4%A6%E0%A4%BE%E0%A4%B8%20%E0%A4%95%E0%A5%87%20%E0%A4%A6%E0%A5%8B%E0%A4%B9%E0%A5%87.pdf'}/>
           </div>
           <div className="col-md-3">
-            <Category image={shyambaba1} name={'Shyam Baba'} />
+            <Category image={shyambaba1} name={'Shyam Baba'} link={'https://pdfinbox.com/wp-content/uploads/2023/04/Khatu-Shyam-Chalisa.pdf'}/>
           </div>
           <div className="col-md-3">
-            <Category image={shiv1} name={'Shiv'}/>
+            <Category image={shiv1} name={'Shiv'} link={'https://thakurbhimsingh.com/wp-content/uploads/2019/03/shiv-ji-ki-amar-katha-edition1.pdf'}/>
           </div>
         </div>
       </div>
