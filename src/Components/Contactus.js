@@ -1,22 +1,22 @@
 import React from 'react'
 import FollowUs from './FollowUs';
 export default function Contactus() {
-  function handleregister() {
-    let Name = document.getElementById("Name").value;
-    let Email = document.getElementById("Email").value;
-    let Textarea = document.getElementById("Textarea").value;
-    if (Name !== "" && Email !== "" && Textarea !== ""){
-      console.log(Name, Email, Textarea);
+  function handletextarea() {
+    let name = document.getElementById("Name").value;
+    let email = document.getElementById("Email").value;
+    let reviaws = document.getElementById("Textarea").value;
+    if (name !== "" && email !== "" && reviaws !== ""){
+      console.log(name, email, reviaws);
      
-      fetch("http://13.127.50.136:8002/sign_up/", {
+      fetch("http://127.0.0.1:8000/user/", {
         method: "POST",
         headers: {
           "content-type": "application/json",
         },
         body: JSON.stringify({
-          Name: Name,
-          Email: Email,
-          Textarea: Textarea,
+          name: name,
+          email: email,
+          reviaws: reviaws,
         }),
       })
         .then((res) => res.json())
@@ -45,7 +45,7 @@ export default function Contactus() {
           <label forhtml="exampleFormControlTextarea1" className="form-label">Description</label>
           <textarea className="form-control" id="Textarea" rows="8"></textarea>
         </div>
-        <button className="btn btn-primary my-4" onClick={handleregister}>Submit</button>
+        <button className="btn btn-primary my-4" onClick={handletextarea}>Submit</button>
       </div>
       <div className="col-md-6" style={{ marginTop: "24px", textAlign: "right" }}>
         <div className="support">
