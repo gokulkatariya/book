@@ -4,11 +4,11 @@ export default function Contactus() {
   function handletextarea() {
     let name = document.getElementById("Name").value;
     let email = document.getElementById("Email").value;
-    let reviaws = document.getElementById("Textarea").value;
-    if (name !== "" && email !== "" && reviaws !== ""){
-      console.log(name, email, reviaws);
+    let reviews = document.getElementById("Textarea").value;
+    if (name !== "" && email !== "" && reviews !== ""){
+      console.log(name, email, reviews);
      
-      fetch("http://127.0.0.1:8000/user/", {
+      fetch("http://16.16.213.194:8080/user/", {
         method: "POST",
         headers: {
           "content-type": "application/json",
@@ -16,7 +16,7 @@ export default function Contactus() {
         body: JSON.stringify({
           name: name,
           email: email,
-          reviaws: reviaws,
+          reviews: reviews,
         }),
       })
         .then((res) => res.json())
